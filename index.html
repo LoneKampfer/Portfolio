@@ -13,63 +13,8 @@
 </head>
 
 <body>
-  <!--AFTER CONTENT IS DONE
-       <div class="landing">
-         <img src="4kspace.jpg" class="img-fluid" alt="Responsive image">
-         <h1 class="image-top"> Please work</h1>
-       </div>
-       -->
 
-  <!--  Prototype Navbar
-  <nav>
-    <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Manohar_aboutme.html">About me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="resume.html">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="projects.html"> Projects </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contactme.html">Contact Me</a>
-      </li>
-    </ul>
-  </nav>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a href="index.html" class="navbar-brand">Arin </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-    <span class="navbar-toggler-icon"> </span>
-  </button>
-
-    <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav ml-auto">
-        <li class="navbar-item active">
-          <a href="index.html" class="nav-link"> Home</a>
-        </li>
-        <li class="navbar-item">
-          <a href="Manohar_aboutme.html" class="nav-link"> About Me</a>
-        </li>
-        <li class="navbar-item">
-          <a class="nav-link" href="resume.html"> Resume</a>
-        </li>
-        <li class="navbar-item">
-          <a href="projects.html" class="nav-link"> Projects</a>
-        </li>
-        <li class="navbar-item">
-          <a href="contactme.html" class="nav-link"> Contact Me</a>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
-
--->
-
+  <!-- NAV -->
   <div class="wrapper">
     <header>
       <nav>
@@ -85,7 +30,7 @@
             <li> <a href="Manohar_aboutme.html"> About Me</a> </li>
             <li> <a href="projects.html"> Projects </a> </li>
             <li> <a href="resume.html"> Resume</a> </li>
-            <li> <a href="contactme.html"> Contact Me</a> </li>
+            <li> <a href="contactme.html"> Contact</a> </li>
           </ul>
         </div>
       </nav>
@@ -95,14 +40,16 @@
   <!--Javascript-->
 
   <script type="text/javascript">
+    /* global $ */
+
     $(document).ready(function() {
       $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
       });
     });
 
-    $(window).on("scroll", function () {
-      if($(window).scrollTop()) {
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop()) {
         $('nav').addClass('black');
       }
 
@@ -112,11 +59,13 @@
     });
   </script>
 
+
+  <!-- TEXT ON THE IMAGE -->
   <div class="container">
     <div class="bigtext">
       <h2> Arin Manohar</h2>
-        <br>
-        <h4> Online Portfolio</h4>
+      <br>
+      <h4> Online Portfolio</h4>
     </div>
   </div>
 
@@ -124,15 +73,18 @@
   <section class="jumbotron">
     <div class="container">
       <h1> Arin's Online Portfolio</h1>
-      <p> Hi, my name is Arin Manohar. I come from California, specifically the Bay Area.</p>
+      <p> It all started with a passion for coding back when I was
+      nine years old. Now I strive to be a physicist, particularly
+      a Quantum Physicists and a Quantum Computer Engineer.</p>
       <p> <a href="Manohar_aboutme.html"> Learn More about me</a></p>
-<hr>
+      <hr>
     </div>
   </section>
   <!--MAIN CONTENT-->
   <div class="container">
-    <div class="row">
+      <div class="row row-mobile">
       <div class="col">
+
         <h6> Work experience</h6>
         <h5> Python</h5>
         <p> I took an online course in Python</p>
@@ -147,7 +99,7 @@
         <p> <a href="projects.html"> Learn More...</a></p>
       </div>
       <div class="col"> <img src="Images/scratch.jpg" /></div>
-      <div class="w-100"></div>
+
 
       <div class="col">
         <h6> Work Experience</h6>
@@ -167,25 +119,31 @@
     </div>
   </div>
 
-  <footer class="jumbotron bottom">
-    <div class="row">
-      <ul>
+
+
+
+
+  <div class="container">
+    <hr>
+  </div>
+
+  <br>
+
+
+  <div class="container">
+    <div class="social">
       <a href="mailto:arinmanohar@gmail.com?Subject=Contact%20me" target="_blank">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          </a>
-
-
-        <i class="fa fa-github" aria-hidden="true"></i>
-
-
-
-        <a href="https://www.dublin.k12.ca.us/dhs" target="_blank"> <img src="Images/dhs.jpg"></a>
-
-     </ul>
-
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </a>
+      <a href="https://github.com/LoneKampfer" target="_blank">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+      <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+      <img src="Images/Dlogo.jpg">
+    </a>
 
     </div>
-  </footer>
+  </div>
 </body>
 
 </html>

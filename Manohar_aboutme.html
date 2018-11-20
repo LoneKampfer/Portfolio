@@ -35,6 +35,7 @@
 
  <div class="wrapper">
     <header class="banner">
+
       <nav>
         <div class="menu-icon">
           <i class="fa fa-bars fa-2x"></i>
@@ -48,11 +49,11 @@
             <li> <a href="Manohar_aboutme.html" class="rightnow"> About Me</a> </li>
             <li> <a href="projects.html"> Projects </a> </li>
             <li> <a href="resume.html"> Resume</a> </li>
-            <li> <a href="contactme.html"> Contact Me</a> </li>
+            <li> <a href="contactme.html"> Contact</a> </li>
           </ul>
         </div>
       </nav>
-
+        <div class="color-overlay"> </div>
       </header>
 
   </div>
@@ -60,14 +61,24 @@
 
   <!--Javascript-->
 
-  <script type="text/javascript">
+ <script type="text/javascript">
+   /*global $ */
+
     $(document).ready(function() {
       $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
       });
     });
 
-      $('nav').addClass('black');
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+
+      else {
+        $('nav').removeClass('black');
+      }
+    });
   </script>
 
   <!--TOP OF THE PAGE
@@ -81,9 +92,7 @@
 
   <div class="container">
     <div class="banner-text">
-      <h2> Arin Manohar</h2>
-        <br>
-        <h4> Online Portfolio</h4>
+      <h2> About Me</h2>
     </div>
   </div>
 
@@ -91,9 +100,9 @@
   <!--Main Content-->
 
 
-  </style>
+
   <div class="container marg-top">
-    <div class="row">
+    <div class="row row-mobile">
       <div class="col">
         <img src="Images/stonedpic.jpg">
       </div>
@@ -105,7 +114,7 @@
           To accomplish this, I plan on going to an engineering college after
           I am done with high school. I want to pursue this field because I
           want to crack all the mysteries that the universe has given us,
-          and make sense of our reality. <br><br> <h3>  My Strengths/Work Skills</h3>  <br><br>  I am a
+          and make sense of our reality. <br><br> <h3>  My Strengths/Work Skills</h3>    I am a
           really calm person, and I never crack under pressure.
           I have developed this trait a lot through my school experience,
           with all the tests and challenging assignments that I have taken.
@@ -119,10 +128,10 @@
           anything that I have set my eyes on, no matter how much time or
           effort it takes. This trait comes from everyday life. Everyone has their ups
           and downs during life, and it cannot be avoided, so it is important
-          that you push through the struggle. <br><br><h3>My Achievements</h3> <br><br>  I have had
-          principal's honor roll throughout middle school and in high school as well. <br>I
+          that you push through the struggle. <br><br> <h3>My Achievements</h3>   I have had
+          principal's honor roll throughout middle school and in high school as well.I
           have won numerous medals for Science Olympiad. <br>I have programmed websites, games
-          and apps. <br> <br>
+          and apps. <br> <br> <br>
           In conclusion, my goal is to have a career where I work with computers and
           people. I thank you for your time, and feel free to contact me and explore
           the rest of the website.
@@ -138,24 +147,28 @@
 
 
 
-  <!--Footer-->
-  <footer class="jumbotron bottom">
-    <div class="row">
+  <div class="container">
+  <hr>
+</div>
 
-      <div class="col-sm-1">
-        <a href="mailto:arinmanohar@gmail.com?Subject=Contact%20me" target="_blank">
-            <img src="Images/mail.jpg">
-            </a>
-      </div>
-      <div class="col-sm-10">
-        <img src="Images/faceb.jpg">
-      </div>
+  <br>
+  <br>
 
-      <div class="col-sm-1">
-        <a href="https://www.dublin.k12.ca.us/dhs" target="_blank"> <img src="Images/dhs.jpg"></a>
-      </div>
-    </div>
-  </footer>
+
+  <div class="container">
+  <div class="social">
+    <a href="mailto:arinmanohar@gmail.com?Subject=Contact%20me" target="_blank">
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    </a>
+    <a href="https://github.com/LoneKampfer" target="_blank">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+     <a href="https://www.dublin.k12.ca.us/dhs" target="_blank">
+      <img src="Images/Dlogo.jpg">
+    </a>
+
+  </div>
+</div>
 
 </body>
 
