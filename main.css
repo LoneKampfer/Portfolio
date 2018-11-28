@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+
 }
 
 body {
@@ -321,7 +322,7 @@ nav ul li .rightnow {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1051.98px) {
 
   .row-mobile {
     display: block;
