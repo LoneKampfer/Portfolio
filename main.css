@@ -361,4 +361,10 @@ nav ul li .rightnow {
   .col img {
     margin-bottom: 20px;
   }
+
+  .big-img{
+    margin-bottom: 20px;
+    height: 250px;
+    width: 85%;
+  }
 }
