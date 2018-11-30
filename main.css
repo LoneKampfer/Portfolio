@@ -191,6 +191,17 @@ nav ul li:hover {
 
 }
 
+.hr-proj {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100px;
+  background-color: red;
+  height: 2.5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .form {
   position: absolute;
   top: 60%;
@@ -198,7 +209,9 @@ nav ul li:hover {
   transform: translate(-50%,-50%);
 }
 
-
+.frbrick {
+  color: firebrick;
+}
 
 nav.black ul {
   background: black;
@@ -235,10 +248,25 @@ i:hover {
   color: red;
 }
 
-
+.thick {
+    background-color: firebrick;
+    color: firebrick !important;
+    border: solid 2px firebrick ;
+    height: 5px;
+    width: 40%;
+    margin-left: 0px;
+}
 
 nav ul li .rightnow {
   color: red;
+}
+
+.rsm {
+  background-color: white;
+}
+
+.gris {
+  color: #999999;
 }
 
 .bigtext {
@@ -322,7 +350,7 @@ nav ul li .rightnow {
   }
 }
 
-@media (max-width: 1051.98px) {
+@media (max-width: 575.98px) {
 
   .row-mobile {
     display: block;
