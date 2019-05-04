@@ -288,8 +288,25 @@ nav ul li .rightnow {
   color: #999999;
 }
 
+.ct-btn-scroll {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 250px;
+    padding-top: 5000px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
 .bigtext {
   position: absolute;
+  background-attachment: inherit;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
